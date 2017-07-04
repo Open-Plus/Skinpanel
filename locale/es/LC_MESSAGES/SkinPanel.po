@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-17 19:15+0200\n"
+"PO-Revision-Date: 2017-06-17 19:15+0200\n"
+"Last-Translator: VillaK <soporte@openplus.es>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: plugin.py:62
+msgid ""
+"Choose the options you like best, save changes and then restart enigma to "
+"apply the changes."
+msgstr ""
+"Escoge las opciones que más se adapten a tu decodificador, guarda cambios "
+"te pedirá reiniciar la interfaz para aplicar los cambios."
+
+#: plugin.py:80
+msgid "OpenPlusHD! Skin Configuration"
+msgstr "OpenPlusHD! Skin Configuración"
+
+#: plugin.py:81
+msgid "Skinpanel in Menu"
+msgstr "Mostar PanelSkin en Menú General"
+
+#: plugin.py:82
+msgid "Weather Yahoo in Infobar"
+msgstr "El Tiempo de Yahoo en Infobar"
+
+#: plugin.py:83
+msgid "Weather Yahoo in SecondInfobar"
+msgstr "El Tiempo de Yahoo en 2Infobar"
+
+#: plugin.py:83
+msgid "Weather Foreca in Infobar"
+msgstr "El Tiempo de Foreca en Infobar"
+
+#: plugin.py:83
+msgid "Weather Foreca in SecondInfobar"
+msgstr "El Tiempo de Foreca en 2Infobar"
+
+#: plugin.py:84
+msgid "Weather Yahoo in Mediaplayer EMC"
+msgstr "El Tiempo de Yahoo en Reproductor EMC"
+
+#: plugin.py:85
+msgid "Bitrate in Infobar"
+msgstr "Bitrate en Infobar"
+
+#: plugin.py:86
+msgid "Menu Extended, with icons"
+msgstr "Menú Extendido, con iconos"
+
+#: plugin.py:87
+msgid "Event Name runnig text in Infobar"
+msgstr "Nombre del Evento en movimiento Infobar"
+
+#: plugin.py:88
+msgid "Event Name runnig text in second Infobar"
+msgstr "Nombre del Evento en movimiento 2Infobar"
+
+#: plugin.py:89
+msgid "Event Description runnig text in second Infobar"
+msgstr "Descripción del Evento en movimiento 2Infobar"
+
+#: plugin.py:90
+msgid "Camd/ECM Info in second Infobar"
+msgstr "Información de CAM/ECM 2Infobar"
+
+#: plugin.py:91
+msgid "Crypt Info in second Infobar"
+msgstr "Información de Encriptación 2Infobar"
+
+#: plugin.py:92
+msgid "Frequency Info in second Infobar"
+msgstr "Información de frecuencia 2Infobar"
+
+#: plugin.py:93
+msgid "Provider Info in second Infobar"
+msgstr "Información de Proveedor 2Infobar"
+
+#: plugin.py:94
+msgid "Signal Info in second Infobar"
+msgstr "Información de Señal 2Infobar"
+
+#: plugin.py:97
+msgid "Close"
+msgstr "Cerrar"
+
+#: plugin.py:98
+msgid "Save"
+msgstr "Guardar"
+
+#: plugin.py:100
+msgid "Restart  GUI"
+msgstr "Reiniciar interfaz"
+
+#: plugin.py:122
+msgid ""
+"Restart your %s %s to apply settings\n"
+"Restart now?"
+msgstr ""
+"Hay que reiniciar GUI en tu %s %s para aplicar la configuración \n"
+"¿Reiniciar ahora?"
+
+#: plugin.py:222 plugin.py:226
+msgid "OpenPlusHD SkinPanel"
+msgstr "OpenPlusHD SkinPanel"
+
+#: plugin.py:226
+msgid "Configure OpenPlusHD Skin"
+msgstr "Configura el Skin OpenPlusHD"
+
+#~ msgid "Configuration is saved and now you restart GUI"
+#~ msgstr ""
+#~ "Configuración ¡guardada! Ahora Reinicia Interfaz para aplicar cambios"

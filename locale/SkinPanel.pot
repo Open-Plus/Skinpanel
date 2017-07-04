@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid   ""
+msgstr  "Project-Id-Version: PACKAGE VERSION\n"
+        "Report-Msgid-Bugs-To: \n"
+        "POT-Creation-Date: 2017-04-08 17:24+0200\n"
+        "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+        "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+        "Language-Team: LANGUAGE <LL@li.org>\n"
+        "Language: \n"
+        "MIME-Version: 1.0\n"
+        "Content-Type: text/plain; charset=CHARSET\n"
+        "Content-Transfer-Encoding: 8bit\n"
+
+#: plugin.py:62
+msgid   "Choose the options you like best, save changes and then restart "
+        "enigma to apply the changes."
+msgstr  ""
+
+#: plugin.py:80
+msgid   "OpenPlusHD! Skin Configuration"
+msgstr  ""
+
+#: plugin.py:81
+msgid   "Skinpanel in Menu"
+msgstr  ""
+
+#: plugin.py:82
+msgid   "Weather Yahoo in Infobar"
+msgstr  ""
+
+#: plugin.py:83
+msgid   "Weather Yahoo in SecondInfobar"
+msgstr  ""
+
+#: plugin.py:83
+msgid   "Weather Foreca in Infobar"
+msgstr  ""
+
+#: plugin.py:83
+msgid   "Weather Foreca in SecondInfobar"
+msgstr  ""
+
+#: plugin.py:84
+msgid   "Weather Yahoo in Mediaplayer EMC"
+msgstr  ""
+
+#: plugin.py:85
+msgid   "Bitrate in Infobar"
+msgstr  ""
+
+#: plugin.py:86
+msgid   "Menu Extended, with icons"
+msgstr  ""
+
+#: plugin.py:87
+msgid   "Event Name runnig text in Infobar"
+msgstr  ""
+
+#: plugin.py:88
+msgid   "Event Name runnig text in second Infobar"
+msgstr  ""
+
+#: plugin.py:89
+msgid   "Event Description runnig text in second Infobar"
+msgstr  ""
+
+#: plugin.py:90
+msgid   "Camd/ECM Info in second Infobar"
+msgstr  ""
+
+#: plugin.py:91
+msgid   "Crypt Info in second Infobar"
+msgstr  ""
+
+#: plugin.py:92
+msgid   "Frequency Info in second Infobar"
+msgstr  ""
+
+#: plugin.py:93
+msgid   "Provider Info in second Infobar"
+msgstr  ""
+
+#: plugin.py:94
+msgid   "Signal Info in second Infobar"
+msgstr  ""
+
+#: plugin.py:97
+msgid   "Close"
+msgstr  ""
+
+#: plugin.py:98
+msgid   "Save"
+msgstr  ""
+
+#: plugin.py:100
+msgid   "Restart  GUI"
+msgstr  ""
+
+#: plugin.py:122
+msgid   "Restart your %s %s to apply settings\nRestart now?"
+msgstr  ""
+
+#: plugin.py:222 plugin.py:226
+msgid   "OpenPlusHD SkinPanel"
+msgstr  ""
+
+#: plugin.py:226
+msgid   "Configure OpenPlusHD Skin"
+msgstr  ""
