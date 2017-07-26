@@ -38,7 +38,7 @@ lang = language.getLanguage()
 os.environ["LANGUAGE"] = lang[:2]
 gettext.bindtextdomain("enigma2", resolveFilename(SCOPE_LANGUAGE))
 gettext.textdomain("enigma2")
-gettext.bindtextdomain("SkinPanel", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/SkinPanel/locale/"))
+gettext.bindtextdomain("SkinPanel", "%s%s" % (resolveFilename(SCOPE_PLUGINS), "Extensions/skinpanel/locale/"))
 
 def _(txt):
 	t = gettext.dgettext("SkinPanel", txt)
@@ -77,7 +77,10 @@ class skinpanel_setup(Screen, ConfigListScreen):
     <eLabel position="640,660" size="901,2" backgroundColor="white" zPosition="5" foregroundColor="white" />
     <widget name="text" position="650,666" size="883,158" zPosition="5" halign="left" font="Caviar_bold; 22" backgroundColor="un6e6e6e" foregroundColor="white" transparent="1" />
     <panel name="menu_template_net" />
-    <panel name="button_template_rava_n" />
+      <widget source="key_red" render="Label" position="675,789" size="184,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" backgroundColor="black" foregroundColor="white" />
+    <widget source="key_green" render="Label" position="902,789" size="184,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
+     <eLabel position="640,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="-1" />
+    <eLabel position="867,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="green" zPosition="-1" />
      </screen>"""
 	def __init__(self, session):
 		self.session = session
@@ -180,10 +183,10 @@ class skinpanel_setup(Screen, ConfigListScreen):
               self.cstring("/usr/share/enigma2/openplusHD/skin.xml", '<panel name="menu_template_infobar_yweather_off" />', '<panel name="menu_template_infobar_yweather" />')
               print "weather in EMC on"
             
-            self.cstring("/usr/share/enigma2/openplusHD/skin.xml",'<panel name="menu_template_icons" />', '<ePixmap pixmap="openplusHD/menu/menup.png" position="385,428" size="250,359" alphatest="blend" zPosition="-12" />')
+            self.cstring("/usr/share/enigma2/openplusHD/skin.xml",'<panel name="menu_template_icons" />', '<ePixmap pixmap="openplusHD/menu/menup.png" position="196,433" size="250,359" alphatest="blend" zPosition="-12" />')
             print "Extended menu off"
             if config.plugins.skinpanel.extmenu.value:
-              self.cstring("/usr/share/enigma2/openplusHD/skin.xml", '<ePixmap pixmap="openplusHD/menu/menup.png" position="385,428" size="250,359" alphatest="blend" zPosition="-12" />', '<panel name="menu_template_icons" />')
+              self.cstring("/usr/share/enigma2/openplusHD/skin.xml", '<ePixmap pixmap="openplusHD/menu/menup.png" position="196,433" size="250,359" alphatest="blend" zPosition="-12" />', '<panel name="menu_template_icons" />')
               print "Extended menu on"
               
             self.cstring("/usr/share/enigma2/openplusHD/skin_infobars.xml",'<panel name="menu_template_infobar_eventnamerun" />', '<panel name="menu_template_infobar_eventname" />')
