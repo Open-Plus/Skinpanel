@@ -20,6 +20,7 @@ import os
 import os.path
 import time
 import gettext
+from enigma import addFont
 from Plugins.Plugin import PluginDescriptor
 from boxbranding import getBoxType, getMachineBrand, getMachineName
 from Components.ActionMap import ActionMap
@@ -33,6 +34,8 @@ from Components.Pixmap import Pixmap
 from Screens.MessageBox import MessageBox
 from Screens.Standby import TryQuitMainloop
 from Screens.Screen import Screen
+
+addFont('/usr/lib/enigma2/python/Plugins/Extensions/SkinPanel/CaviarDreams_Bold.ttf', 'Caviar_bold', 100, False)
 
 lang = language.getLanguage()
 os.environ["LANGUAGE"] = lang[:2]
@@ -77,6 +80,30 @@ class skinpanel_setup(Screen, ConfigListScreen):
     <eLabel position="640,660" size="901,2" backgroundColor="white" zPosition="5" foregroundColor="white" />
     <widget name="text" position="650,666" size="883,158" zPosition="5" halign="left" font="Caviar_bold; 22" backgroundColor="un6e6e6e" foregroundColor="white" transparent="1" />
     <panel name="menu_template_net" />
+      <eLabel text="OPENPLUS" position="center,155" size="430,65" font="audiowide; 42" halign="center" transparent="1" foregroundColor="white" backgroundColor="un42b3" />
+  <eLabel position="1201,840" size="230,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <widget source="Title" transparent="1" render="Label" zPosition="2" valign="center" halign="left" position="365,235" size="1125,50" font="Caviar_bold; 32" backgroundColor="black" foregroundColor="white" noWrap="1" />
+  <widget source="global.CurrentTime" render="Label" position="1287,144" size="251,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 26" valign="center" halign="right">
+    <convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1238,172" size="300,55" backgroundColor="un42b3" foregroundColor="iplusAccent2" transparent="1" zPosition="2" font="audiowide; 18" valign="center" halign="right">
+    <convert type="ClockToText">Date</convert>
+  </widget>
+  <widget source="session.CurrentService" render="RunningText" options="movetype=running,startpoint=0,direction=left,steptime=25,repeat=150,startdelay=1500,always=0" position="377,841" size="224,50" font="plus; 19" transparent="1" valign="center" zPosition="2" backgroundColor="black" foregroundColor="white" noWrap="1" halign="center">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <!-- /* LOGOPLUS -->
+  <eLabel position="center,center" size="1288,808" transparent="0" zPosition="-15" backgroundColor="transpWhite" />
+  <widget source="session.CurrentService" render="Label" zPosition="3" font="Regular; 25" position="1207,848" size="218,50" halign="center" backgroundColor="un929292" transparent="1" noWrap="1" foregroundColor="white">
+     <convert type="openSTBinfo">SYStemp</convert>
+  </widget>
+  <!-- LOGOPLUS */ -->
+  <eLabel position="center,234" size="1217,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="375,840" size="229,50" transparent="0" foregroundColor="white" backgroundColor="black" />
+  <eLabel position="640,840" size="551,50" transparent="0" foregroundColor="white" backgroundColor="un929292" zPosition="-1" />
+  <eLabel position="640,312" size="901,457" transparent="0" foregroundColor="white" backgroundColor="un6e6e6e" zPosition="-10" />
+  <eLabel text="EXIT" position="1441,840" size="100,50" font="Regular; 30" zPosition="2" halign="center" noWrap="1" transparent="0" foregroundColor="white" backgroundColor="un929292" valign="center" />
+  <eLabel position="center,150" size="1217,68" transparent="0" foregroundColor="white" backgroundColor="transpblue" zPosition="-10" />
       <widget source="key_red" render="Label" position="675,789" size="184,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" backgroundColor="black" foregroundColor="white" />
     <widget source="key_green" render="Label" position="902,789" size="184,35" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="center" transparent="0" foregroundColor="white" backgroundColor="black" />
      <eLabel position="640,789" size="35,35" transparent="0" foregroundColor="white" backgroundColor="red" zPosition="-1" />
