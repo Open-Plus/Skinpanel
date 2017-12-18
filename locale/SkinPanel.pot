@@ -112,3 +112,7 @@ msgstr  ""
 #: plugin.py:226
 msgid   "Configure OpenPlusHD Skin"
 msgstr  ""
+
+#: plugin.py:226
+msgid   "Edit Buttons in Menu"
+msgstr  ""

@@ -51,6 +51,7 @@ def _(txt):
 
 config.plugins.skinpanel = ConfigSubsection()
 config.plugins.skinpanel.onmenu = ConfigYesNo(default=True)
+config.plugins.skinpanel.buttonmenu = ConfigYesNo(default=True)
 config.plugins.skinpanel.winfobar = ConfigYesNo(default=False)
 config.plugins.skinpanel.wsecinfobar = ConfigYesNo(default=False)
 config.plugins.skinpanel.fwinfobar = ConfigYesNo(default=False)
@@ -115,6 +116,7 @@ class skinpanel_setup(Screen, ConfigListScreen):
 		self.setTitle(_("OpenPlusHD! Skin Configuration"))
 		self.list = []
                 self.list.append(getConfigListEntry(_("Skinpanel in Menu"), config.plugins.skinpanel.onmenu))
+                self.list.append(getConfigListEntry(_("Edit Buttons in Menu"), config.plugins.skinpanel.buttonmenu))
 		self.list.append(getConfigListEntry(_("Weather Yahoo in Infobar"), config.plugins.skinpanel.winfobar))
                 self.list.append(getConfigListEntry(_("Weather Yahoo in SecondInfobar"), config.plugins.skinpanel.wsecinfobar))
                 self.list.append(getConfigListEntry(_("Weather Foreca in Infobar"), config.plugins.skinpanel.fwinfobar))
@@ -174,6 +176,12 @@ class skinpanel_setup(Screen, ConfigListScreen):
             ##
             ## All changes off by default
             ##
+            self.cstring("/usr/share/enigma2/openplusHD/skin_template.xml",'<screen name="button_template_ava_big">', '<screen name="button_template_ava_big_off">')
+            print "Buttons in menu off"
+            if config.plugins.skinpanel.buttonmenu.value:
+              self.cstring("/usr/share/enigma2/openplusHD/skin_template.xml", '<screen name="button_template_ava_big_off">', '<screen name="button_template_ava_big">')
+              print "Buttons in menu on"
+              
             self.cstring("/usr/share/enigma2/openplusHD/skin_infobars.xml",'<panel name="menu_template_infobar_bitrate" />', '<panel name="menu_template_infobar_bitrate_off" />')
             print "Bitrate in infobar off"
             if config.plugins.skinpanel.btinfobar.value:
